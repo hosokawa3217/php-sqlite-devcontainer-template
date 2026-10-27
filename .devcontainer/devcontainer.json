@@ -1,0 +1,24 @@
+{
+  "name": "PHP & SQLite Class Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "qwtel.sqlite-viewer",
+        "eamodio.gitlens"
+      ]
+    }
+  },
+  "forwardPorts": [80],
+  "portsAttributes": {
+    "80": {
+      "label": "Web Server",
+      "onAutoForward": "notify"
+    }
+  },
+  "remoteUser": "root"
+}

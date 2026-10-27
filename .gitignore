@@ -1,0 +1,8 @@
+# SQLite データベースファイルを対象外に設定
+*.sqlite
+*.sqlite3
+*.db
+
+# OS固有の不要ファイル
+.DS_Store
+Thumbs.db
